@@ -1,0 +1,39 @@
+.wave-container {
+  height: 100vh;
+  background-image: url('./img/great_wave_background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+}
+.backwave {
+  position: absolute;
+  width: 100%;
+  top: 10vh;
+  animation: backWaves 5s infinite;
+}
+
+.frontwave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  animation: frontWaves 5s infinite;
+}
+
+@keyframes backWaves {
+  0% {top: 30px}
+  50% {top: 20px}
+  100% {top: 30px}
+}
+
+@keyframes frontWaves {
+  0% {top: 0px}
+  50% {top: 10px}
+  100% {top: 0px}
+}
